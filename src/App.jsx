@@ -57,13 +57,13 @@ function App() {
   }
 
   return (
-    <Container className="d-flex w-100 h-100  ">
+    <Container className="d-flex w-100 h-100">
       <Container
         id="converterSection"
         className="d-flex flex-column justify-content-center "
       >
-        <Row className="justify-content-center">
-          <h1 className="display-4">Convert</h1>
+        <Row className="justify-content-center mb-4">
+          <h1 className="display-4 m-0">Currency Coverter</h1>
         </Row>
         <CurrencyRow
           currencyOptions={currencyOptions}
@@ -72,8 +72,8 @@ function App() {
           amount={fromAmount}
           onChangeAmount={handleFromAmountChange}
         />
-        <Row className="d-flex justify-content-center mt-0 ">
-          <h1 className="display-4">=</h1>
+        <Row className="d-flex justify-content-center h-10">
+          <h1 className="display-3 m-0 pb-3">=</h1>
         </Row>
         <CurrencyRow
           currencyOptions={currencyOptions}
