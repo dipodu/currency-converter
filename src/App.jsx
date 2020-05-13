@@ -63,7 +63,7 @@ function App() {
         className="d-flex flex-column justify-content-center "
       >
         <Row className="justify-content-center mb-4">
-          <h1 className="display-4 m-0">Currency Coverter</h1>
+          <h1 className="display-4 m-0">Currency Converter</h1>
         </Row>
         <CurrencyRow
           currencyOptions={currencyOptions}

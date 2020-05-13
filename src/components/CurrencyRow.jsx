@@ -16,17 +16,24 @@ export default function CurrencyRow(props) {
 
   return (
     <Row className="d-flex justify-content-center align-content-center">
-      <InputGroup className="mb-2 w-25 m-0">
+      <InputGroup className=" w-25 mb-0">
         <FormControl
           aria-describedby="basic-addon1"
           value={amount}
           onChange={onChangeAmount}
           type="number"
+          className="h-100"
         />
       </InputGroup>
       <Dropdown>
         <Dropdown.Toggle id="currencyDrop" variant="success">
-          {selectedCurrency}
+          <span>{selectedCurrency}</span>
+          <img
+            src={`./images/${selectedCurrency}.png`}
+            width={30}
+            height={30}
+            class="rounded"
+          />
         </Dropdown.Toggle>
 
         <Dropdown.Menu>
@@ -40,7 +47,13 @@ export default function CurrencyRow(props) {
             >
               <div>{option}</div>
               <div>
-                <img src="./images/gbp.png" alt="currency-flag" />
+                <img
+                  src={`./images/${option}.png`}
+                  width={30}
+                  height={30}
+                  class="rounded"
+                  margin-left="40px"
+                />
               </div>
             </Dropdown.Item>
           ))}
