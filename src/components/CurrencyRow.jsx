@@ -52,7 +52,6 @@ export default function CurrencyRow(props) {
                   width={30}
                   height={30}
                   class="rounded"
-                  margin-left="40px"
                 />
               </div>
             </Dropdown.Item>
