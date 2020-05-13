@@ -32,12 +32,16 @@ export default function CurrencyRow(props) {
         <Dropdown.Menu>
           {currencyOptions.map((option) => (
             <Dropdown.Item
+              className="d-flex justify-content-between"
               as="button"
               key={option}
               value={option}
               onClick={onChangeCurrency}
             >
-              {option}
+              <div>{option}</div>
+              <div>
+                <img src="./images/gbp.png" alt="currency-flag" />
+              </div>
             </Dropdown.Item>
           ))}
         </Dropdown.Menu>
